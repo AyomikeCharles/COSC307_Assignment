@@ -93,6 +93,6 @@ body {
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px) {
     #dishes2 {
-        margin: 40px;
+        margin: 40px 10px;
     }
 }
