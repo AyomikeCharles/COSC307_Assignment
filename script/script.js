@@ -59,7 +59,7 @@ const addComment = () =>{
   if(name && comment){
     document.getElementById('name_error').style.display = 'none'
     document.getElementById('comments_error').style.display = 'none'
-    document.getElementById('comments').innerHTML += `<div class="comment"><div><b>${name}</b></div>${comment}</div>`
+    document.getElementById('comments').insertAdjacentHTML('afterbegin', `<div class="comment"><div><b>${name}</b></div>${comment}</div>`)
     document.getElementById('comment').value = ''
     document.getElementById('name').value = ''
   }

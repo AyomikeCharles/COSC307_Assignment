@@ -49,7 +49,7 @@ body {
   }
 
   .feedback-form {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .feedback-form input[type="text"],
@@ -79,7 +79,6 @@ body {
 
   #comments{
     margin-bottom: 100px;
-    margin-top: 50px;
   }
 
   .comment{
