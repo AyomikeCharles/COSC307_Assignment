@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family:'Work Sans';
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+
+.main_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px 20px; */
+    background-color: #333;
+    color: #fff;
+}
+
+.nav_menu{
+    flex: 5;
+}
+
+.nav_item{
+    display: flex;
+    list-style-type:none;
+    justify-content: space-between;
+    margin: 0, auto;
+    width: 50%;
+}
+
+.mobile_nav_item{
+  list-style-type:none;
+}
+
+.mobile_nav_item li a{
+  color: white;
+}
+
+.mobile_menu{
+    flex: 1;
+    color: white;
+    display: none;
+}
+
+.nav_item li a{
+    color: white;
+    font-weight:100;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav_item li{
+    padding: 10px 10px;
+}
+
+.mobile_nav{
+    transition: 1s;
+    height: 0;
+    overflow: hidden;
+    color: black;
+}
+
+.nav_item li:hover {
+    background-color: #fe4066;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.logo{
+    flex: 3;
+}
+
+.logo a{
+    color: #fe4066;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+
+.logo a span{
+    color: lightcoral;
+}
+
+.hero_img{
+    width: 100%;
+    height: 100%;
+}
+
+#slideshow {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+}
+
+.main_container{
+    padding: 100px 100px;
+}
+
+#about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 50px 40px; */
+}
+
+.about_content{
+    flex: 1;
+}
+
+
+.about_img{
+    border-radius: 10px;
+    width: 85%;
+}
+
+.about_content_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#dishes{
+    background-color: #fe4066;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+#dishes h3{
+    padding-left: 10px;
+}
+
+.dishes_link{
+    color: #fff;
+    margin-left: 20px;
+}
+
+.dishes_link:hover{
+    color: #FAFAFA;
+}
+
+.dishes_content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    /* width: 300px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  }
+
+  .card h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .card p {
+    color: #666;
+    font-size: 16px;
+  }
+
+  .contact_content {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  input[type="submit"] {
+    background-color: #fe4066;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #7e192d;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+  }
+
+  .subscribe {
+    margin-left: auto;
+  }
+
+  .subscribe input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .subscribe input[type="submit"] {
+    background-color: #fe4066;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .subscribe input[type="submit"]:hover {
+    background-color: #7e192d;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .footer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer_links_container{
+    flex:1;
+  }
+
+  .footer_links{
+    list-style-type:none;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .footer_links_text{
+    text-decoration: none;
+    color: #FAFAFA;
+  }
+
+  .footer_links_text:hover{
+    color: #fe4066;
+  }
+  
+  .footer_links div{
+    margin: 10px 0;
+  }
+
+  .footer_text{
+    flex:1
+  }
+
+  .error{
+    color: red;
+    display: none;
+  }
+
+  .right{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  #newsletter-error{
+    display: none;
+    color:red
+  }
+
+
+  /* Medium devices (landscape tablets, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .dishes_content{
+        display: block;
+    }
+
+    .main_container{
+        padding: 40px 10px;
+    }
+
+    .nav_menu{
+        display: none;
+    }
+
+    .main_nav{
+        padding: 20px 10px
+    }
+
+    #closeIcon{
+      display: none;
+    }
+
+    .menu_icon{
+      width: 20px;
+      height: 20px;
+    }
+
+    .mobile_menu{
+        display: block;
+        
+    }
+
+    .mobile_nav{
+        background-color: #333;
+    }
+    
+
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .dishes_content{
+        grid-template-columns: auto auto;
+    }
+    
+    .footer_content{
+        display: block;
+      } 
+
+    .footer_links{
+        text-align: left;
+      }
+
+      #about{
+        display: block;
+    }
+
+    #dishes{
+        margin: 50px auto;
+        border-radius: 10px;
+        padding: 0 0;
+    }
+
+    .about_content_2{
+        justify-content:left
+    }
+
+    #slideshow {
+        height: 300px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+
+    .main_container{
+        padding: 40px 40px;
+    }
+}

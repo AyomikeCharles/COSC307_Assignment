@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styles2.css" />
+    <link rel="stylesheet" href="../style/styles.css" />
+    <title>Recipe Page</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="main_nav">
+            <div class="logo"><a href="/">CharLe<span>sDis</span>hes</a></div>
+            <div class="nav_menu">
+                <ul class="nav_item">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="../index.html?#contact">Contact</a></li>
+                    <li><a href="../index.html?#about">About</a></li>
+                </ul>
+            </div>
+            <div class="mobile_menu">
+                <div id="openIcon" onclick="openMobileMenu()">
+                    <img src="../image/open.png" class="menu_icon"/>
+                </div>
+                <div id="closeIcon" onclick="closeMobileMenu()">
+                    <img src="../image/close.png" class="menu_icon"/> 
+                </div>
+            </div>
+        </nav>
+        <div class="mobile_nav" id="mobile_nav_menu">
+            <ul class="mobile_nav_item">
+                <li><a href="/">Home</a></li>
+                <li><a href="dishes.html">Dishes</a></li>
+                <li><a href="../index.html?#contact">Contact</a></li>
+                <li><a href="../index.html?#about">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="header">
+        <h1>Delicious Recipe</h1>
+    </div>
+
+    <div class="container">
+        <img src="../image/vsp.jpg" alt="Food Picture" class="recipe-img">
+
+        <h2>Ingredients</h2>
+        <table>
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Efo Shoko or Spinach</td>
+                <td>4 cups</td>
+              </tr>
+              <tr>
+                <td>Palm oil</td>
+                <td>1/2 cup</td>
+              </tr>
+              <tr>
+                <td>Assorted meat (beef, goat meat, etc.)</td>
+                <td>500g</td>
+              </tr>
+              <tr>
+                <td>Stockfish</td>
+                <td>200g</td>
+              </tr>
+              <tr>
+                <td>Dried fish</td>
+                <td>100g</td>
+              </tr>
+              <tr>
+                <td>Onion</td>
+                <td>1 large</td>
+              </tr>
+              <tr>
+                <td>Red bell pepper (Tatashe)</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Scotch bonnet peppers (Ata rodo)</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Ground crayfish</td>
+                <td>2 tablespoons</td>
+              </tr>
+              <tr>
+                <td>Iru (fermented locust beans)</td>
+                <td>2 tablespoons</td>
+              </tr>
+              <tr>
+                <td>Seasoning cube</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Salt</td>
+                <td>To taste</td>
+              </tr>
+              <tr>
+                <td>Water</td>
+                <td>As needed</td>
+              </tr>
+            </tbody>
+          </table>
+          
+
+        <h2>Preparation</h2>
+        <div class="description">
+            <ul>
+                <li>Wash the assorted meat thoroughly and cut into bite-sized pieces.</li>
+                <li>Soak the stockfish in hot water for about 30 minutes to soften it.</li>
+                <li>Remove the bones from the dried fish and break it into smaller pieces.</li>
+                <li>Chop the onion, red bell pepper, and scotch bonnet peppers.</li>
+                <li>Heat the palm oil in a pot over medium heat.</li>
+                <li>Add the chopped onion to the hot oil and sauté until translucent.</li>
+                <li>Add the chopped red bell pepper and scotch bonnet peppers to the pot. Stir well.</li>
+                <li>Drain excess water from the soaked stockfish and add it to the pot along with the assorted meat and dried fish.</li>
+                <li>Add the ground crayfish, iru, seasoning cubes, and salt to taste.</li>
+                <li>Pour in enough water to cover the ingredients and bring the soup to a boil.</li>
+                <li>Reduce the heat to low and let the soup simmer for about 30 minutes, or until the meat is tender.</li>
+                <li>Wash and chop the efo shoko or spinach, then add it to the pot.</li>
+                <li>Stir well and let the soup simmer for another 5-10 minutes, or until the vegetables are wilted.</li>
+                <li>Adjust seasoning if necessary.</li>
+                <li>Remove from heat and serve hot with your favorite side dish.</li>
+              </ul>
+              
+        </div>
+
+        <h2>Feedback</h2>
+        <div class="feedback-form">
+            <!-- <form action="#" method="post"> -->
+                <div class="error" id="name_error">name is compulsory</div>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <div class="error" id="comments_error">comment is compulsory</div>
+                <textarea name="feedback" id="comment" placeholder="Your Feedback" required></textarea>
+                <input type="submit" value="Submit Feedback" onclick="addComment()">
+            <!-- </form> -->
+        </div>
+
+        <div id="comments">
+            <h3>feedbacks</h3>
+            <div class="comment">
+                <div><b>Jhon Snow</b></div>
+                this is such a wonderfull dish, i love it
+            </div>
+            <div class="comment">
+                <div><b>Solomon</b></div>
+                this is such a wonderfull dish, i love it, this is such a wonderfull dish, i love it,
+                this is such a wonderfull dish, i love it, this is such a wonderfull dish, i love it,
+                this is such a wonderfull dish, i love it
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_text">
+                <p>
+                    <h4>CharLesDishes</h4>
+                    Description of dish 2 goes here. It may include ingredients, preparation method, and any other relevant information.
+                  </p>
+            </div>
+            <div class="footer_links_container">
+                <div class="footer_links">
+                    <div><a class="footer_links_text" href="/">Home</a></div>
+                    <div><a class="footer_links_text" href="pages/dishes">Dishes</a></div>
+                    <div><a class="footer_links_text" href="pages/contactus">Contact Us</a></div>
+                    <div><a class="footer_links_text" href="pages/about">About</a></div>
+                </div>
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe to our Newsletter</h3>
+                  <div id="newsletter-error">email is required</div>
+                  <input type="email" name="email" id="newsletter" placeholder="Your Email Address" required>
+                  <input type="submit" value="Subscribe" onclick="handleSubmit()">
+              </div>
+        </div>
+
+        <div class="right">
+            <p>all right reserve</p>
+        </div>
+    </footer>
+
+</body>
+<script src="../script/script.js" ></script>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styles2.css" />
+    <link rel="stylesheet" href="../style/styles.css" />
+    <title>Recipe Page</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="main_nav">
+            <div class="logo"><a href="/">CharLe<span>sDis</span>hes</a></div>
+            <div class="nav_menu">
+                <ul class="nav_item">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="../index.html?#contact">Contact</a></li>
+                    <li><a href="../index.html?#about">About</a></li>
+                </ul>
+            </div>
+            <div class="mobile_menu">
+                <div id="openIcon" onclick="openMobileMenu()">
+                    <img src="../image/open.png" class="menu_icon"/>
+                </div>
+                <div id="closeIcon" onclick="closeMobileMenu()">
+                    <img src="../image/close.png" class="menu_icon"/> 
+                </div>
+            </div>
+        </nav>
+        <div class="mobile_nav" id="mobile_nav_menu">
+            <ul class="mobile_nav_item">
+                <li><a href="/">Home</a></li>
+                <li><a href="dishes.html">Dishes</a></li>
+                <li><a href="../index.html?#contact">Contact</a></li>
+                <li><a href="../index.html?#about">About</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="header">
+        <h1>Jollof Rice Recipe</h1>
+    </div>
+
+    <div class="container">
+        <img src="../image/jollofrice.jpg" alt="Food Picture" class="recipe-img">
+
+        <h2>Ingredients</h2>
+        <table>
+            <tr>
+                <th>Ingredient</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Long-grain parboiled rice</td>
+                <td>2 cups</td>
+            </tr>
+            <tr>
+                <td>Diced tomatoes (or fresh tomatoes, blended)</td>
+                <td>1 can (400g) or 4 medium-sized</td>
+            </tr>
+            <tr>
+                <td>Onion</td>
+                <td>1 large</td>
+            </tr>
+            <tr>
+                <td>Garlic</td>
+                <td>2-3 cloves</td>
+            </tr>
+            <tr>
+                <td>Scotch bonnet peppers</td>
+                <td>1-2 (adjust according to spice preference)</td>
+            </tr>
+            <tr>
+                <td>Bell pepper (red or green)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Tomato paste</td>
+                <td>2 tablespoons</td>
+            </tr>
+            <tr>
+                <td>Ground paprika</td>
+                <td>1 teaspoon</td>
+            </tr>
+            <tr>
+                <td>Ground cayenne pepper (optional)</td>
+                <td>1 teaspoon</td>
+            </tr>
+            <tr>
+                <td>Ground thyme</td>
+                <td>1 teaspoon</td>
+            </tr>
+            <tr>
+                <td>Ground curry powder</td>
+                <td>1 teaspoon</td>
+            </tr>
+            <tr>
+                <td>Ground ginger</td>
+                <td>1 teaspoon</td>
+            </tr>
+            <tr>
+                <td>Ground nutmeg</td>
+                <td>1 teaspoon</td>
+            </tr>
+            <tr>
+                <td>Chicken or vegetable broth</td>
+                <td>2 cups</td>
+            </tr>
+            <tr>
+                <td>Cooking oil (vegetable or palm oil)</td>
+                <td>2 tablespoons</td>
+            </tr>
+            <tr>
+                <td>Salt</td>
+                <td>To taste</td>
+            </tr>
+            <tr>
+                <td>Pepper</td>
+                <td>To taste</td>
+            </tr>
+            <tr>
+                <td>Fresh cilantro or parsley (optional, for garnish)</td>
+                <td>As desired</td>
+            </tr>
+        </table>
+        
+
+        <h2>Preparation</h2>
+        <div class="description">
+            <ul>
+                <li>Rinse the rice under cold water until the water runs clear. Drain and set aside.</li>
+                <li>In a large pot or skillet, heat the cooking oil over medium heat. Add the chopped onions and sauté until translucent, about 3-4 minutes.</li>
+                <li>Add the minced garlic, chopped Scotch bonnet peppers, and diced bell pepper to the pot. Stir and cook for another 2-3 minutes until fragrant.</li>
+                <li>Stir in the tomato paste, ground paprika, ground cayenne pepper (if using), ground thyme, ground curry powder, ground ginger, and ground nutmeg. Cook for 1-2 minutes to toast the spices.</li>
+                <li>Add the blended or canned tomatoes to the pot and cook, stirring occasionally, until the sauce thickens and the oil begins to separate from the tomatoes, about 10-15 minutes.</li>
+                <li>Pour in the chicken or vegetable broth and season with salt and pepper to taste. Bring the mixture to a simmer.</li>
+                <li>Once the sauce is simmering, add the rinsed rice to the pot, stirring well to combine and ensure the rice is evenly coated with the sauce.</li>
+                <li>Cover the pot with a tight-fitting lid and reduce the heat to low. Allow the rice to cook undisturbed for about 20-25 minutes, or until the rice is tender and has absorbed all the liquid.</li>
+                <li>Once the rice is cooked, remove the pot from the heat and let it sit, covered, for an additional 5 minutes to steam.</li>
+                <li>Fluff the rice with a fork and garnish with fresh cilantro or parsley, if desired. Serve hot and enjoy your delicious Jollof rice!</li>
+              </ul>
+        </div>
+
+        <h2>Feedback</h2>
+        <div class="feedback-form">
+            <!-- <form action="#" method="post"> -->
+                <div class="error" id="name_error">name is compulsory</div>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <div class="error" id="comments_error">comment is compulsory</div>
+                <textarea name="feedback" id="comment" placeholder="Your Feedback" required></textarea>
+                <input type="submit" value="Submit Feedback" onclick="addComment()">
+            <!-- </form> -->
+        </div>
+
+        <div id="comments">
+            <h3>feedbacks</h3>
+            <div class="comment">
+                <div><b>Jhon Snow</b></div>
+                this is such a wonderfull dish, i love it
+            </div>
+            <div class="comment">
+                <div><b>Solomon</b></div>
+                this is such a wonderfull dish, i love it, this is such a wonderfull dish, i love it,
+                this is such a wonderfull dish, i love it, this is such a wonderfull dish, i love it,
+                this is such a wonderfull dish, i love it
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_text">
+                <p>
+                    <h4>CharLesDishes</h4>
+                    Description of dish 2 goes here. It may include ingredients, preparation method, and any other relevant information.
+                  </p>
+            </div>
+            <div class="footer_links_container">
+                <div class="footer_links">
+                    <div><a class="footer_links_text" href="/">Home</a></div>
+                    <div><a class="footer_links_text" href="pages/dishes">Dishes</a></div>
+                    <div><a class="footer_links_text" href="pages/contactus">Contact Us</a></div>
+                    <div><a class="footer_links_text" href="pages/about">About</a></div>
+                </div>
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe to our Newsletter</h3>
+                  <div id="newsletter-error">email is required</div>
+                  <input type="email" name="email" id="newsletter" placeholder="Your Email Address" required>
+                  <input type="submit" value="Subscribe" onclick="handleSubmit()">
+              </div>
+        </div>
+
+        <div class="right">
+            <p>all right reserve</p>
+        </div>
+    </footer>
+
+</body>
+<script src="../script/script.js" ></script>
+</html>

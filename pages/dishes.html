@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styles2.css" />
+    <link rel="stylesheet" href="../style/styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="main_nav">
+            <div class="logo"><a href="/">CharLe<span>sDis</span>hes</a></div>
+            <div class="nav_menu">
+                <ul class="nav_item">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="../index.html?#contact">Contact</a></li>
+                    <li><a href="../index.html?#about">About</a></li>
+                </ul>
+            </div>
+            <div class="mobile_menu">
+                <div id="openIcon" onclick="openMobileMenu()">
+                    <img src="../image/open.png" class="menu_icon"/>
+                </div>
+                <div id="closeIcon" onclick="closeMobileMenu()">
+                    <img src="../image/close.png" class="menu_icon"/> 
+                </div>
+            </div>
+        </nav>
+        <div class="mobile_nav" id="mobile_nav_menu">
+            <ul class="mobile_nav_item">
+                <li><a href="/">Home</a></li>
+                <li><a href="dishes.html">Dishes</a></li>
+                <li><a href="../index.html?#contact">Contact</a></li>
+                <li><a href="../index.html?#about">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="header">
+        <h1>Delicious Dishes</h1>
+    </div>
+
+    <section id="dishes2">
+        <div class="dishes_content">
+
+            <a href="jollofrice.html">
+                <div class="card">
+                   <img src="../image/jollof.jpg" alt="Dish 1">
+                   <h4>Jollof Rice</h4>
+                   <p>A West African rice dish cooked in tomato sauce with spices, popular for celebrations</p>
+                </div>
+               </a>
+                 
+   
+               <a href="beans.html">
+                 <div class="card">
+                   <img src="../image/beans.jpg" alt="Dish 3">
+                   <h4>Beans and plantain</h4>
+                   <p>beans and ripe plantains cooked together, often seasoned with onions, peppers, and spices</p>
+                 </div>
+               </a>
+   
+               <a href="egusi.html">
+                   <div class="card">
+                      <img src="../image/egusi.jfif" alt="Dish 1">
+                      <h4>Egusi Soup</h4>
+                      <p>Nigerian soup with ground melon seeds, meats, veggies, and palm oil, usually taken with garri</p>
+                   </div>
+                  </a>
+
+
+
+
+
+
+
+
+
+            <a href="banga.html">
+              <div class="card">
+                <img src="../image/bangas.jfif" alt="Dish 3">
+                <h4>Banga Soup</h4>
+                <p>A dish made with palm fruit extract, typically cooked with assorted meats, fish, and spices</p>
+              </div>
+            </a>
+
+
+
+            <a href="vegitable.html">
+                <div class="card">
+                   <img src="../image/vsp.jpg" alt="Dish 1">
+                   <h4>Vegetable Soup</h4>
+                   <p>Nourishing dish with assorted vegetables, often seasoned with herbs and spices for flavor</p>
+                </div>
+               </a>
+
+
+               <a href="friedrice.html">
+                <div class="card">
+                   <img src="../image/fr.jpg" alt="Dish 1">
+                   <h4>Fried Rice</h4>
+                   <p>Flavorful dish made with cooked rice stir-fried with vegetables, and often meat, seasoned spices</p>
+                </div>
+               </a>
+
+
+               <a href="peppersoup.html">
+                <div class="card">
+                   <img src="../image/ps.jpg" alt="Dish 1">
+                   <h4>pepper Soup</h4>
+                   <p>A Spicy broth-based Nigerian soup made with a variety of meats or fish, seasoned with hot peppers spices</p>
+                </div>
+               </a>
+
+
+               <a href="owoh.html">
+                <div class="card">
+                   <img src="../image/owoh.jfif" alt="Dish 1">
+                   <h4>Owoh Soup</h4>
+                   <p>A Nigerian soup made with palm oil, assorted meats, and leafy greens, flavored with spices and herbs</p>
+                </div>
+               </a>
+
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_text">
+                <p>
+                    <h4>CharLesDishes</h4>
+                    Description of dish 2 goes here. It may include ingredients, preparation method, and any other relevant information.
+                  </p>
+            </div>
+            <div class="footer_links_container">
+                <div class="footer_links">
+                    <div><a class="footer_links_text" href="/">Home</a></div>
+                    <div><a class="footer_links_text" href="dishes.html">Dishes</a></div>
+                    <div><a class="footer_links_text" href="../index.html?#contact">Contact Us</a></div>
+                    <div><a class="footer_links_text" href="../index.html?#about">About</a></div>
+                </div>
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe to our Newsletter</h3>
+                  <div id="newsletter-error">email is required</div>
+                  <input type="email" name="email" id="newsletter" placeholder="Your Email Address" required>
+                  <input type="submit" value="Subscribe" onclick="handleSubmit()">
+              </div>
+        </div>
+
+        <div class="right">
+            <p>all right reserve</p>
+        </div>
+    </footer>
+
+</body>
+<script src="../script/script.js" ></script>
+</html>

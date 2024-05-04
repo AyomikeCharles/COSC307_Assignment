@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- this is the header section -->
+    <header>
+        <nav class="main_nav">
+            <div class="logo"><a href="/">CharLe<span>sDis</span>hes</a></div>
+            <div class="nav_menu">
+                <ul class="nav_item">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="pages/dishes.html">Dishes</a></li>
+                    <li><a href="index.html?#contact">Contact</a></li>
+                    <li><a href="index.html?#about">About</a></li>
+                </ul>
+            </div>
+            <div class="mobile_menu">
+                <div id="openIcon" onclick="openMobileMenu()">
+                    <img src="image/open.png" class="menu_icon"/>
+                </div>
+                <div id="closeIcon" onclick="closeMobileMenu()">
+                    <img src="image/close.png" class="menu_icon"/> 
+                </div>
+            </div>
+        </nav>
+        <div class="mobile_nav" id="mobile_nav_menu">
+            <ul class="mobile_nav_item">
+                <li><a href="/">Home</a></li>
+                <li><a href="pages/dishes.html">Dishes</a></li>
+                <li><a href="pages/contactus">Contact</a></li>
+                <li><a href="pages/about">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- this is the hero section -->
+    <section class="hero">
+        <div id="slideshow">
+            <div class="slide active">
+                <img src="image/banner1.jpg" class="hero_img" />
+            </div>
+            <div class="slide">
+                <img src="image/banner2.jpg" class="hero_img" />
+            </div>
+            <div class="slide">
+                <img src="image/jollof.jpg" class="hero_img" />
+            </div>
+        </div>
+    </section>
+
+    <div class="main_container">
+
+
+    <section id="about">
+        <div class="about_content">
+            <h3>ABOUT US</h3>
+            <p>
+                Welcome to [Website Name], your ultimate destination for culinary inspiration and mouth-watering
+                recipes! At [Website Name], we're passionate about food and believe that cooking should be a joyful and
+                rewarding experience for everyone.
+            </p>
+          
+
+            <P>
+                Join us on this delicious journey as we explore the wonderful world of food together. Whether you're
+                here to discover new recipes, sharpen your cooking skills, or simply indulge in the joy of cooking,
+                we're excited to be part of your culinary adventure.
+
+            </P>
+            <P>
+                Happy cooking!
+            </p>
+        </div>
+        <div class="about_content about_content_2">
+            <img src="image/jollof.jpg" class="about_img"/>
+        </div>
+    </section>
+
+    <section id="dishes">
+        <h3>Dishes</h3>
+        <div class="dishes_content">
+            <a href="/pages/jollofrice.html">
+             <div class="card">
+                <img src="image/jollof.jpg" alt="Dish 1">
+                <h4>Jollof Rice</h4>
+                <p>A West African rice dish cooked in tomato sauce with spices, popular for celebrations</p>
+             </div>
+            </a>
+              
+
+            <a href="/pages/beans.html">
+              <div class="card">
+                <img src="image/beans.jpg" alt="Dish 3">
+                <h4>Beans</h4>
+                <p>beans and ripe plantains cooked together, often seasoned with onions, peppers, and spices</p>
+              </div>
+            </a>
+
+            <a href="/pages/egusi.html">
+                <div class="card">
+                   <img src="image/egusi.jfif" alt="Dish 1">
+                   <h4>Egusi Soup</h4>
+                   <p>Nigerian soup with ground melon seeds, meats, veggies, and palm oil, usually taken with garri</p>
+                </div>
+               </a>
+        </div>
+        <div>
+            <a href="pages/dishes.html" class="dishes_link">see all dishes</a>
+        </div>
+
+    </section>
+    
+    <section id="contact">
+        <div class="contact_content">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+
+    </section>
+
+
+</div>
+
+<footer class="footer">
+    <div class="footer_content">
+        <div class="footer_text">
+            <p>
+                <h4>CharLesDishes</h4>
+                Description of dish 2 goes here. It may include ingredients, preparation method, and any other relevant information.
+              </p>
+        </div>
+     
+      <div class="footer_links_container">
+        <div class="footer_links">
+            <div><a class="footer_links_text" href="/">Home</a></div>
+            <div><a class="footer_links_text" href="pages/dishes.html">Dishes</a></div>
+            <div><a class="footer_links_text" href="index.html?#contact">Contact Us</a></div>
+            <div><a class="footer_links_text" href="index.html?#about">About</a></div>
+        </div>
+      </div>
+
+      <div class="subscribe">
+        <h3>Subscribe to our Newsletter</h3>
+          <div id="newsletter-error">email is required</div>
+          <input type="email" name="email" id="newsletter" placeholder="Your Email Address" required>
+          <input type="submit" value="Subscribe" onclick="handleSubmit()">
+      </div>
+    </div>
+
+    <div class="right">
+        <p>all right reserve</p>
+    </div>
+  </footer>
+
+</body>
+<script src="script/script.js" ></script>
+</html>

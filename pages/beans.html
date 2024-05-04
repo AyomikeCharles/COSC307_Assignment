@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styles2.css" />
+    <link rel="stylesheet" href="../style/styles.css" />
+    <title>Recipe Page</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="main_nav">
+            <div class="logo"><a href="/">CharLe<span>sDis</span>hes</a></div>
+            <div class="nav_menu">
+                <ul class="nav_item">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="../index.html?#contact">Contact</a></li>
+                    <li><a href="../index.html?#about">About</a></li>
+                </ul>
+            </div>
+            <div class="mobile_menu">
+                <div id="openIcon" onclick="openMobileMenu()">
+                    <img src="../image/open.png" class="menu_icon"/>
+                </div>
+                <div id="closeIcon" onclick="closeMobileMenu()">
+                    <img src="../image/close.png" class="menu_icon"/> 
+                </div>
+            </div>
+        </nav>
+        <div class="mobile_nav" id="mobile_nav_menu">
+            <ul class="mobile_nav_item">
+                <li><a href="/">Home</a></li>
+                <li><a href="dishes.html">Dishes</a></li>
+                <li><a href="../index.html?#contact">Contact</a></li>
+                <li><a href="../index.html?#about">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="header">
+        <h1>Beans and plantain Recipe</h1>
+    </div>
+
+    <div class="container">
+        <img src="../image/beans.jpg" alt="Food Picture" class="recipe-img">
+
+        <h2>Ingredients</h2>
+        <table>
+            <thead>
+              <tr>
+                <th>Ingredient</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Beans</td>
+                <td>4 cups</td>
+              </tr>
+              <tr>
+                <td>Ripe plantain</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Onion</td>
+                <td>1 medium</td>
+              </tr>
+              <tr>
+                <td>Red bell pepper</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Tomato</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Palm oil</td>
+                <td>2 tablespoons</td>
+              </tr>
+              <tr>
+                <td>Seasoning cube</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Salt</td>
+                <td>To taste</td>
+              </tr>
+              <tr>
+                <td>Water</td>
+                <td>As needed</td>
+              </tr>
+            </tbody>
+          </table>
+          
+
+        <h2>Preparation</h2>
+        <div class="description">
+            <ul>
+                <li>Wash the beans thoroughly and soak in water overnight or for at least 6 hours.</li>
+                <li>Drain the soaked beans and rinse again with clean water.</li>
+                <li>In a pot, add the soaked beans and enough water to cover the beans.</li>
+                <li>Bring the beans to a boil over medium-high heat, then reduce the heat and let it simmer until tender, about 1 to 1.5 hours.</li>
+                <li>While the beans is cooking, peel and slice the ripe plantains.</li>
+                <li>Chop the onion, red bell pepper, and tomato.</li>
+                <li>In a separate pan, heat the palm oil over medium heat.</li>
+                <li>Add the chopped onion, red bell pepper, and tomato to the hot oil.</li>
+                <li>Sauté the vegetables until they are soft and fragrant, about 5-7 minutes.</li>
+                <li>Add the cooked beans to the sautéed vegetables and mix well.</li>
+                <li>Cook the beans and vegetable mixture for another 10-15 minutes, stirring occasionally.</li>
+                <li>Season with the seasoning cube and salt to taste.</li>
+                <li>In a separate pan, fry the sliced plantains until golden brown on both sides.</li>
+                <li>Drain excess oil from the fried plantains on paper towels.</li>
+                <li>Serve the cooked beans and vegetable mixture with the fried plantains.</li>
+              </ul>
+              
+        </div>
+
+        <h2>Feedback</h2>
+        <div class="feedback-form">
+            <!-- <form action="#" method="post"> -->
+                <div class="error" id="name_error">name is compulsory</div>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <div class="error" id="comments_error">comment is compulsory</div>
+                <textarea name="feedback" id="comment" placeholder="Your Feedback" required></textarea>
+                <input type="submit" value="Submit Feedback" onclick="addComment()">
+            <!-- </form> -->
+        </div>
+
+        <div id="comments">
+            <h3>feedbacks</h3>
+            <div class="comment">
+                <div><b>Jhon Snow</b></div>
+                this is such a wonderfull dish, i love it
+            </div>
+            <div class="comment">
+                <div><b>Solomon</b></div>
+                this is such a wonderfull dish, i love it, this is such a wonderfull dish, i love it,
+                this is such a wonderfull dish, i love it, this is such a wonderfull dish, i love it,
+                this is such a wonderfull dish, i love it
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_text">
+                <p>
+                    <h4>CharLesDishes</h4>
+                    Description of dish 2 goes here. It may include ingredients, preparation method, and any other relevant information.
+                  </p>
+            </div>
+            <div class="footer_links_container">
+                <div class="footer_links">
+                    <div><a class="footer_links_text" href="/">Home</a></div>
+                    <div><a class="footer_links_text" href="dishes.html">Dishes</a></div>
+                    <div><a class="footer_links_text" href="../index.html?#contact">Contact Us</a></div>
+                    <div><a class="footer_links_text" href="../index.html?#about">About</a></div>
+                </div>
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe to our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+
+        <div class="right">
+            <p>all right reserve</p>
+        </div>
+    </footer>
+
+</body>
+<script src="../script/script.js" ></script>
+</html>

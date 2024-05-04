@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styles2.css" />
+    <link rel="stylesheet" href="../style/styles.css" />
+    <title>Recipe Page</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="main_nav">
+            <div class="logo"><a href="/">CharLe<span>sDis</span>hes</a></div>
+            <div class="nav_menu">
+                <ul class="nav_item">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="dishes.html">Dishes</a></li>
+                    <li><a href="../index.html?#contact">Contact</a></li>
+                    <li><a href="../index.html?#about">About</a></li>
+                </ul>
+            </div>
+            <div class="mobile_menu">
+                <div id="openIcon" onclick="openMobileMenu()">
+                    <img src="../image/open.png" class="menu_icon"/>
+                </div>
+                <div id="closeIcon" onclick="closeMobileMenu()">
+                    <img src="../image/close.png" class="menu_icon"/> 
+                </div>
+            </div>
+        </nav>
+        <div class="mobile_nav" id="mobile_nav_menu">
+            <ul class="mobile_nav_item">
+                <li><a href="/">Home</a></li>
+                <li><a href="dishes.html">Dishes</a></li>
+                <li><a href="../index.html?#contact">Contact</a></li>
+                <li><a href="../index.html?#about">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="header">
+        <h1>Banga Soup Recipe</h1>
+    </div>
+
+    <div class="container">
+        <img src="../image/bangas.jfif" alt="Food Picture" class="recipe-img">
+
+        <h2>Banga Soup Recipe</h2>
+
+<table>
+  <tr>
+    <th>Ingredient</th>
+    <th>Quantity</th>
+  </tr>
+  <tr>
+    <td>Palm fruit extract</td>
+    <td>2 cups</td>
+  </tr>
+  <tr>
+    <td>Assorted meats (beef, goat meat, etc.)</td>
+    <td>500g</td>
+  </tr>
+  <tr>
+    <td>Fish (catfish, tilapia, etc.)</td>
+    <td>1 medium-sized</td>
+  </tr>
+  <tr>
+    <td>Vegetables (scent leaves, bitter leaves, spinach)</td>
+    <td>As needed</td>
+  </tr>
+  <tr>
+    <td>Onions</td>
+    <td>1 medium-sized</td>
+  </tr>
+  <tr>
+    <td>Crayfish (ground)</td>
+    <td>2 tablespoons</td>
+  </tr>
+  <tr>
+    <td>Ground pepper</td>
+    <td>To taste</td>
+  </tr>
+  <tr>
+    <td>Seasoning cubes or powder</td>
+    <td>To taste</td>
+  </tr>
+</table>
+
+<h2>How to Cook Banga Soup</h2>
+<div class="description">
+<ul>
+  <li>Boil the palm fruit extract in a pot until the oil floats to the surface.</li>
+  <li>Add the assorted meats and fish to the pot, and simmer until tender.</li>
+  <li>Add chopped onions, ground crayfish, and seasoning cubes or powder to the pot.</li>
+  <li>Simmer for another 10-15 minutes to allow flavors to meld.</li>
+  <li>Add the vegetables (scent leaves, bitter leaves, or spinach) and ground pepper to taste.</li>
+  <li>Stir well and simmer for an additional 5 minutes.</li>
+  <li>Adjust seasoning if necessary, and serve hot with fufu or another Nigerian staple.</li>
+</ul>
+</div>
+
+        <h2>Feedback</h2>
+        <div class="feedback-form">
+            <!-- <form action="#" method="post"> -->
+                <div class="error" id="name_error">name is compulsory</div>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <div class="error" id="comments_error">comment is compulsory</div>
+                <textarea name="feedback" id="comment" placeholder="Your Feedback" required></textarea>
+                <input type="submit" value="Submit Feedback" onclick="addComment()">
+            <!-- </form> -->
+        </div>
+
+        <div id="comments">
+            <h3>feedbacks</h3>
+            <div class="comment">
+                <div><b>Jhon Snow</b></div>
+                this is such a wonderfull dish, i love it
+            </div>
+            <div class="comment">
+                <div><b>Solomon</b></div>
+                this is such a wonderfull dish, i love it, this is such a wonderfull dish, i love it,
+                this is such a wonderfull dish, i love it, this is such a wonderfull dish, i love it,
+                this is such a wonderfull dish, i love it
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_text">
+                <p>
+                    <h4>CharLesDishes</h4>
+                    Description of dish 2 goes here. It may include ingredients, preparation method, and any other relevant information.
+                  </p>
+            </div>
+            <div class="footer_links_container">
+                <div class="footer_links">
+                    <div><a class="footer_links_text" href="/">Home</a></div>
+                    <div><a class="footer_links_text" href="dishes.html">Dishes</a></div>
+                    <div><a class="footer_links_text" href="../index.html?#contact">Contact Us</a></div>
+                    <div><a class="footer_links_text" href="../index.html?#about">About</a></div>
+                </div>
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe to our Newsletter</h3>
+                  <div id="newsletter-error">email is required</div>
+                  <input type="email" name="email" id="newsletter" placeholder="Your Email Address" required>
+                  <input type="submit" value="Subscribe" onclick="handleSubmit()">
+              </div>
+        </div>
+
+        <div class="right">
+            <p>all right reserve</p>
+        </div>
+    </footer>
+
+</body>
+<script src="../script/script.js" ></script>
+</html>
